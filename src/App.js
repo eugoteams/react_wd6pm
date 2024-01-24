@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+/** @format */
+
+import { useEffect, useState } from "react";
+import style from "./App.module.css";
+import InputField from "./Components/InputField/InputField";
+import UseEffectTuts from "./Components/UseEffectTuts/UseEffectTuts";
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  console.log("rendering the componenet");
+
+  const onCLickAddListener = () => {
+    setCount((prevState) => prevState + 1);
+  };
+
+  const onDecrementListener = () => setCount((prevState) => prevState - 1);
+
+  useEffect(() => {
+    if (count === 4) {
+      alert("this is 4");
+    }
+  }, [count]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className={`${style.container}`}>
+    //   <input type="number" value={count} onChange={() => {}} />
+
+    //   <div className={`${style.button_cnt}`}>
+    //     <button onClick={onCLickAddListener}>increment</button>
+    //     <button onClick={onDecrementListener}>decrement</button>
+    //   </div>
+    // </div>
+    <UseEffectTuts />
   );
 }
 

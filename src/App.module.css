@@ -1,0 +1,29 @@
+/** @format */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35rem;
+  margin: 5rem auto;
+}
+
+.container > input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.button_cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3rem;
+  width: 100%;
+}
+
+.button_cnt > button {
+  padding: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+}
