@@ -1,0 +1,14 @@
+/** @format */
+
+.container {
+  height: 80%;
+  overflow: auto;
+  transition: all 0.5s ease;
+  /* background-color: gray; */
+  padding: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  /* border: 1px solid red; */
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,25 @@
+/** @format */
+
+.conatiner {
+  width: 100%;
+  margin: 3rem auto;
+  transition: all 0.5s linear;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.height_slide {
+  height: 25rem;
+  overflow: hidden;
+  /* overflow: auto; */
+  transition: all 0.5s linear;
+}
+
+.body {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  padding: 0.5rem;
+  text-align: justify;
+  margin: 1rem auto;
+}
