@@ -1,0 +1,24 @@
+/** @format */
+
+.container {
+  background-color: #dee2e6;
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 3rem auto;
+  text-transform: capitalize;
+}
+
+/*Serve Code styles */
+
+.sucess {
+  background-color: #37b24d;
+  color: #fffffe;
+}
+
+.fail {
+  background-color: red;
+  color: #fffffe;
+}
